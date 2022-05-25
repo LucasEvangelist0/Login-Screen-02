@@ -1,0 +1,79 @@
+.form-group {
+  position: relative;
+  padding: 16px 0 0;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.form-field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  outline: 0;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px 12px;
+  background: transparent;
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+}
+
+.form-field::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-field:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-field::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-field::placeholder {
+  color: transparent;
+}
+
+.form-field:placeholder-shown ~ .form-label {
+  font-size: 16px;
+  cursor: text;
+  top: 20px;
+}
+
+.form-label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.form-field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 2px;
+  -o-border-image: linear-gradient(to right, #57cc99, #d9ed92) 1;
+     border-image: -webkit-gradient(linear, left top, right top, from(#57cc99), to(#d9ed92)) 1;
+     border-image: linear-gradient(to right, #57cc99, #d9ed92) 1;
+  border-image-slice: 1;
+}
+
+.form-field:focus ~ .form-label {
+  position: absolute;
+  top: 0;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 16px;
+  color: #57cc99;
+  font-weight: bold;
+}
+
+.form-field:required, .form-field:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=form.css.map */ 
